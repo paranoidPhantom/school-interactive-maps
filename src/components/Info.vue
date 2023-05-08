@@ -21,7 +21,7 @@ const { modalOpen } = storeToRefs(store);
                 <img src="/info/maptiler.png">
             </a>
             <a href="https://www.typescriptlang.org" target="_blank" v-tooltip="'TypeScript'">
-                <img src="info/ts.png" alt="">
+                <img src="/info/ts.png" alt="">
             </a>
             <a href="https://vitejs.dev" target="_blank" v-tooltip="'Vite.js'">
                 <img src="/info/vite.png">
