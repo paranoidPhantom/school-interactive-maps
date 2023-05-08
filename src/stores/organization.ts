@@ -13,5 +13,6 @@ export const useOrganizationStore = defineStore('organization', () => {
         modalOpen.value = enabled
     }
 
+
     return { name, images, description, link, icon, modalOpen, setModalEnabled }
 })

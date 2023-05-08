@@ -32,9 +32,8 @@ setInterval(() => {
         <main ref="root" v-if="modalOpen">
             <button class="close" @click="closeModal">X</button>
             <div class="attachment-grid" ref="attachment_grid">
-                <img v-for="image in store.images" :src="`${image}`" />
+                <img v-for="image in store.images" :src="`/images/${store.icon}/${image}.webp`" />
             </div>
-            <img class="thumbnail" :src="`/icons/${store.icon}.webp`" />
             <h1 class="name">{{ store.name }}</h1>
             <p class="description">{{ store.description }}</p>
             <a :href="`${store.link}`" target="_blank" >
@@ -115,7 +114,7 @@ main::-webkit-scrollbar-thumb {
 .attachment-grid > img {
     border-radius: 0.5rem;
     cursor: pointer;
-    width: 15rem;
+    height: 20rem;
     object-fit: cover;
 }
 
