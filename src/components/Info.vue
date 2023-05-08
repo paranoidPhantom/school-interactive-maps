@@ -12,7 +12,7 @@ const { modalOpen } = storeToRefs(store);
             <p v-tooltip="'Сайт создан в рамках итогового проекта по информатике'">
                 <img src="/info/information-button.png">
             </p>
-            <a href="https://github.com/paranoidPhantom/school-interactive-maps" target="_blank" v-tooltip="'Github'">
+            <a href="https://github.com/paranoidPhantom/school-interactive-maps" target="_blank" v-tooltip="'GitHub'">
                 <i class="fa-brands fa-github"></i>
             </a>
             <p class="pipe"></p>
