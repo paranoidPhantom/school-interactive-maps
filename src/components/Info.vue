@@ -29,6 +29,9 @@ const { modalOpen } = storeToRefs(store);
             <a href="https://vuejs.org" target="_blank" v-tooltip="'Vue.js'">
                 <i class="fa-brands fa-vuejs"></i>
             </a>
+            <a href="https://vuejs.com" target="_blank" v-tooltip="'Vercel'">
+                <img src="/info/Vercel.png">
+            </a>
         </div>
     </Transition>
 </template>
