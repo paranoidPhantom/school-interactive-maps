@@ -39,7 +39,6 @@ const { modalOpen } = storeToRefs(store);
 <style scoped>
 .container {
     position: fixed;
-    height: 3rem;
     left: 0;
     bottom: 0;
     border-top-right-radius: 1rem;
@@ -50,7 +49,11 @@ const { modalOpen } = storeToRefs(store);
     align-items: center;
     padding: 0.2rem 1rem;
     gap: 1rem;
+    max-width: 100%;
+    flex-wrap: wrap;
+    height: fit-content;
 }
+
 
 a, p {
     font-size: 1rem;

@@ -71,6 +71,20 @@ main::-webkit-scrollbar-thumb {
     border-radius: 1rem;
 }
 
+@media screen and (max-width: 800px) {
+    main {
+        width: calc(100% - 5rem);
+        height: calc(100% - 5rem);
+    }
+    .attachment-grid > img {
+        border-radius: 0.5rem;
+        cursor: pointer;
+        max-width: 90%;
+        height: auto;
+        object-fit: cover;
+    }
+}
+
 .close {
     position: fixed;
     top: 1rem;
