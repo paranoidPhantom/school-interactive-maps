@@ -18,9 +18,9 @@ const map = shallowRef(null);
 onMounted(() => {
   const apiKey = 'ilN5XKWTe1UEENaX0bSF';
   const initialState = {
-    lng: 30.33373497560444,
-    lat: 59.926662221959766,
-    zoom: 13.4
+    lng: 30.35003005663412,
+    lat: 59.92920608305919,
+    zoom: 13.7
   };
 
   map.value = markRaw(new Map({
@@ -42,6 +42,7 @@ onMounted(() => {
     })
     img.classList.add("marker-img")
     img.setAttribute('src', `/icons/${data.icon}.webp`)
+    img.setAttribute("title",`${data.name}`)
     new Marker(img)
       .setLngLat([data.lng, data.lat])
       .addTo(map.value);

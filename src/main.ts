@@ -1,7 +1,9 @@
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
+import FloatingVue from 'floating-vue'
 import App from './App.vue'
 import './base.css'
+import 'floating-vue/dist/style.css'
 
 const pinia = createPinia()
 
@@ -11,6 +13,8 @@ setTimeout(() => {
     watermark?.remove()
 }, 100);
 
-createApp(App)
-    .use(pinia)
-    .mount('#app')
+const app = createApp(App)
+
+app.use(FloatingVue);
+app.use(pinia)
+app.mount('#app')
