@@ -37,7 +37,7 @@ setInterval(() => {
             <h1 class="name">{{ store.name }}</h1>
             <p class="description">{{ store.description }}</p>
             <a :href="`${store.link}`" target="_blank" >
-                <button v-tooltip="'Google карты'" class="link">
+                <button v-tooltip="'Ссылка на карты'" class="link">
                     <i class="fa-solid fa-map-location-dot"></i>
                 </button>
             </a>
