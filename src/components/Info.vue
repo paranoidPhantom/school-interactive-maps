@@ -17,8 +17,8 @@ const { modalOpen } = storeToRefs(store);
             </a>
             <p class="pipe"></p>
             <p>Использованные технологии -</p>
-            <a href="https://www.maptiler.com" target="_blank" v-tooltip="'MapTiler'">
-                <img src="/info/maptiler.png">
+            <a href="https://www.npmjs.com/package/maplibre-gl" target="_blank" v-tooltip="'MapLibre GL JS'">
+                <img src="/info/MapLibre.png">
             </a>
             <a href="https://www.typescriptlang.org" target="_blank" v-tooltip="'TypeScript'">
                 <img src="/info/ts.png" alt="">
@@ -29,7 +29,7 @@ const { modalOpen } = storeToRefs(store);
             <a href="https://vuejs.org" target="_blank" v-tooltip="'Vue.js'">
                 <i class="fa-brands fa-vuejs"></i>
             </a>
-            <a href="https://vuejs.com" target="_blank" v-tooltip="'Vercel'">
+            <a href="https://vercel.com/home" target="_blank" v-tooltip="'Vercel'">
                 <img src="/info/Vercel.png">
             </a>
         </div>
